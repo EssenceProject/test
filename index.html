@@ -21,6 +21,20 @@
     }
       % UNITY_CUSTOM_WEBXR_POLYFILL_CONFIG %
       var unityInstance = UnityLoader.instantiate("unityContainer", "Build/0d8fd9ba4f654514b54062f9e92f027a.json", { onProgress: UnityProgress });
+
+      UnityLoader.compatibilityCheck = function (unityInstance, onsuccess, onerror) {
+	    if (!UnityLoader.SystemInfo.hasWebGL) {
+	      unityInstance.popup('Your browser does not support WebGL',
+	        [{ text: 'OK', callback: onerror }]);
+	    } else {
+	      onsuccess();
+	    }
+	  }
+
+	  % UNITY_CUSTOM_WEBXR_POLYFILL_CONFIG %
+
+	  var unityInstance = UnityLoader.instantiate("unityContainer", "Build/0d8fd9ba4f654514b54062f9e92f027a.json", { onProgress: UnityProgress });
+
   </script>
 </head>
 
