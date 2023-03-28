@@ -1,0 +1,16 @@
+{
+"companyName": "DefaultCompany",
+"productName": "My project",
+"productVersion": "0.1",
+"dataUrl": "6fcc4164be1829f1b53d805d190b9c39.unityweb",
+"wasmCodeUrl": "87f595393c224e066a5485fe71f57b91.unityweb",
+"wasmFrameworkUrl": "557115d0a032e17030fdc4a2d30023fa.unityweb",
+"graphicsAPI": ["WebGL 2.0","WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.3.15f1"
+}
